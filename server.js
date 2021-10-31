@@ -19,6 +19,23 @@ app.use(express.json());
 //invoke app.use() and serve static files  from the '/public' folder or middleware for public
 app.use(express.static("public"));
 
+//request data
+const {notes} = require('./db/db.json');
+
+//route GET
+app.get('/api/notes', (req, res) => {
+    res.json(notes);
+});
+
+//route to notes.html
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/notes.html'));
+});
+
+//route to index.html
+app.get('*', (req,res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
 
 // listen() method onto our server
 app.listen(PORT, () => {
