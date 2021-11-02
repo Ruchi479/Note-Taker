@@ -17,7 +17,7 @@ The user should clone the repository from GitHub and download Node.js and Expres
 
 ## Usage 
 If the repo is cloned, call npm start on the command line. When on the application, add notes by clicking the pencil icon on the top right and save using the save icon on the top right. Users can view previous notes by clicking on them on the left side list. Users can also delete an item by clicking the trash icon for each note. <br>
-[Screencastify](https://watch.screencastify.com/v/SWN2gdJzHKogzPc9uS5D)
+View walk through video here to demonstrates the usage of application -[Screencastify](https://watch.screencastify.com/v/SWN2gdJzHKogzPc9uS5D)
 
 ## Screenshots 
 ![Note Taker](./Assets/images/note1.png)
