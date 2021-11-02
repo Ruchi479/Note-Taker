@@ -6,7 +6,7 @@ const path = require('path');
 const fs = require('fs');
 
 //if port is any route or 3001
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 //execute express and instantiate the server
 const app = express();
@@ -83,19 +83,26 @@ app.delete('/api/notes/:id', (req, res) => {
     })
 });
 
+//route to index.html
+//route to index.html
+app.get('/', (req,res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
 //route to notes.html
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, './public/notes.html'));
+    console.info(`${req.method} request received`)
 });
 
-//route to index.html
+//route to all pages
 app.get('*', (req,res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
 // listen() method onto our server
 app.listen(PORT, () => {
-    console.log(`API server now on port ${PORT}!`);
+    console.log(`API server now on port ${PORT} !`);
 });
 
 
