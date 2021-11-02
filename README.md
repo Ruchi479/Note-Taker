@@ -8,6 +8,7 @@ This application was created to allow users to read and write notes. This applic
 * [Installation](#installation)
 * [Usage](#usage)
 * [Screenshots](#screenshots)
+* [Links](#links)
 * [Contributing](#contributing)
 * [Tests](#tests)
 
@@ -20,7 +21,13 @@ If the repo is cloned, call npm start on the command line. When on the applicati
 
 ## Screenshots 
 ![Note Taker](./Assets/images/note1.png)
+
 ![Note Taker](./Assets/images/note2.png)
+
+# Links
+* [The URL of the GitHub repository](https://github.com/Ruchi479/Note-Taker.git)
+
+* [The URL of my deployed application](https://express-note-taker-01.herokuapp.com/)
 
 ## Contributing 
 Contributors should read the installation section.
